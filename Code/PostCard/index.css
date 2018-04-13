@@ -1,0 +1,134 @@
+#wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 1380px;
+    height: auto;
+    background-color: lightblue;
+}
+#navbar {
+    background-color: lightgrey;
+    width: 100%;
+    height: 75px;
+}
+#navLogo {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.navbarLink {
+    display: inline-block;
+    background-color: lightyellow;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 7px;
+    padding-left: 15px;
+    padding-Right: 15px;
+    border-radius: 10px;
+    float: right;
+    margin-top: 20px;
+}
+#card img {
+    width: 300px;
+    position: absolute;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* EXAMPLE */
+.circle
+{
+  position:relative;
+  width:300px;
+  height:300px;
+  background:#e9e9e9;
+  /* Create Circle With 50% Rounded */
+
+  border-radius:50%;
+  padding:10px;
+  border:2px dashed #808080;
+  
+  /* Assign the perspective to enable 3d Transform */
+  	perspective :600px;  
+}
+
+.circle .front img{
+  border-radius:50%;
+}
+
+.circle .front
+{
+  position:absolute;
+  z-index:9;  
+ 
+  /* Assign The 3D Transform */
+    backface-visibility: hidden;
+    
+  /* Transition Effect */
+  transition: all .2s ease-in-out;
+}
+/* .flipping class for flip effect using jquery */
+
+.circle.flipping .front
+{
+  z-index:9;
+  transform:rotateX(180deg);
+}
+
+
+.circle .back
+{
+  position:absolute;
+  width:300px;
+  height:300px;
+  background:#929292;
+  overflow:hidden;
+  text-align:center;
+  z-index:8;
+  
+  /* Create Circle With 50% Rounded */
+  border-radius:50%;
+  
+  /* Assign The 3D Transform */
+    transform:rotateX(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform:rotateX(-180deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  
+  /* Transition Effect */
+  transition:all .2s ease-in-out;
+}
+
+.circle.flipping .back
+{
+  z-index:10;
+  transform: rotateX(0deg) rotateY(0deg);
+	transform:rotateX(0deg) rotateY(0deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,46 @@
+2018-03-21 11:30pm Patrick
+- Worked on landing folder
+- Added img folder with vertical logo inside
+
+2018-03-25 9:08pm Patrick
+- Worked on landing folder
+ - fixed background
+ - about us button
+ - scrolling jquery
+ - added 2 imgs to img folder
+
+2018-03-26 1:12pm Patrick
+- Worked on landing
+ - fixed about us box heading
+ - added some about us content
+ - added footer with one nav link
+ - added background image to about us box
+
+2018-04-1 1:12pm 
+
+Angus
+ - started the PostCard Page
+ - Rough draft of it
+
+
+
+2018-04-4 11:45am Patrick
+- added how to section and button on landing
+- added some images to img folder
+- fixed footer on landing
+
+2018 04-8 2:00pm - 9:00pm 
+Angus - finished Japan Page
+2018 04-9 10:00am - 9:00pm 
+Angus - Edited Japan page
+
+2018-04-11 9:52 am Patrick
+- Worked on Japan page
+ - added flip card animation
+
+2018-04-11 12:00pm Patrick
+-Worked on Post Card page
+ - added 6 cards
+ - made them all flip
+- Added quiz folder
+ - only 2 questions but logic works
