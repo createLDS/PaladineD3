@@ -1,5 +1,2 @@
-//Variables
 
-//Functions
 
-//Run code

@@ -57,12 +57,11 @@ a:hover {
 	right: 0px;
 	bottom: 0px;
 	margin: auto;
-	width: 1600px;
+	width: 1380px;
 	height: 900px;
 	margin-top: 45px;
 	padding-top: 50px;
 	text-align: center;
-	background-color: white;
 }
 
 #japanImg {
@@ -86,27 +85,25 @@ a:hover {
 	font-family: 'Mukta Mahee', sans-serif;
 	line-height: 35px;
 	text-align: center;
-	background-color: white;
 }
 
 
 
 /* --------- FONTS ------ */
-.subheader {
+h1 {
 	font-family: 'oswald', sans-serif;
 }
 
-.para {
+p {
 	font-family: 'Mukta Mahee', sans-serif;
 }
 /* --------- Breakfast Section -----------------*/
 
 #wrapper2 {
-	width: 1600px;
+	width: 1380px;
 	height: 500px;
 	display: flex;
 	margin-top: 10%;
-	background-color: white;
 }
 
 /* --------- Flipping Card Section --------------*/
@@ -119,27 +116,75 @@ a:hover {
 #cultureCard {
 	width: 150px;
 	height: 300px;
-	border-radius: 5px;
 }
 
 #japanbreakfastImg {
-	width: 300px;
     height: 400px;
     border-radius: 10px;
     margin-right: 40px;
     margin-top: -20px;
 }
 
-#japanBack {
-	padding: 40px;
+#japanCult {
+	margin-top: 17%;
 }
 
+#japancultInfo{
+	padding: 10%;
+}
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+	margin-top: 2%;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 550px;
+	height: 300px;
+}
+
+  
+        
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+    background-color: #9EBC51;
+    border-radius: 10px;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    background-color: #9EBC51;
+    border-radius: 10px;
+}
+
+/* Flip animation css */
 
 /* --- Traditional Breakfast Content ------ */
 #wrapper3 {
-	width: 1600px;
+	width: 1380px;
 	height: 400px;
-	background-color: white;
 	text-align: left;
     padding-top: 20px;
     margin-top: -6%;
@@ -175,7 +220,7 @@ a:hover {
 #PaladineFooter {
 	color: white;
 	margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 4.1%;
 }
 #aboutusFooter {
 	color: white;

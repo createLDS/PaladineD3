@@ -1,3 +1,281 @@
 #body{}
-#display{}
-#controls{}
+  /* --------- FONTS ------ */
+  .subheader {
+  	font-family: 'oswald', sans-serif;
+  }
+
+  p{
+  	font-family: 'Mukta Mahee', sans-serif;
+  }
+#display{
+  width: 1600px;
+  height: 950px;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin: auto;
+  display: -1;
+}
+
+#wrap{
+  display:flex;
+  justify-content: space-around;
+}
+
+#controls{
+  position: fixed;
+  top:10px;
+  left:10px;
+  margin: auto;
+  z-index:1;
+}
+
+#mainImg {
+  width:800px;
+  height:700px;
+  background-image: url("../img/songkran1.jpg");
+  background-size: contain;
+  background-repeat:no-repeat;
+}
+
+#imgInfo{
+  width:650px;
+  height: 400px;
+  text-align: center;
+}
+
+#wrap2 {
+  width: 1600px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+#wrap3{
+  text-align: center;
+  display:flex;
+}
+#w3Content{
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left:0;
+  right:0;
+  margin: auto;
+}
+
+
+  /* -------    Footer --------- */
+
+  #footer {
+  	width: 100%;
+  	height: 200px;
+  	background-color:#f1355f;
+  	display: flex;
+  	text-align: left;
+  }
+
+  .footerSec {
+  	width: 20%;
+  	height: 200px;
+  	margin:1%;
+  	flex-grow: 3;
+  }
+  #PaladineFooter {
+  	color: white;
+  	margin-left: 5%;
+      margin-top: 5%;
+  }
+  #aboutusFooter {
+  	color: white;
+  	padding-top: 5%;;
+
+  }
+  .socialmediaIcons {
+  	width: 40px;
+  	padding:10px;
+  }
+  #socialmediaFooter {
+  	text-align: center;
+  	position: relative;
+  	top: 100px;
+  	left: 0px;
+  	height: 50px;
+  }
+  #NavFooter {
+  	padding-top: 5%;;
+  	padding-bottom: 5%;
+  	background-color:#f1355f;
+  }
+  .footerNav {
+  	width: 100%;
+  	font-family: 'Mukta Mahee', sans-serif;
+  	text-decoration-line: none;
+  	text-align: center;
+  	color: white;
+  	padding-left: 6%;
+  	padding-right:6%;
+  }
+
+  /* Flip animation css */
+
+  /* entire container, keeps perspective */
+  .flip-container {
+  	perspective: 1000px;
+  }
+  	/* flip the pane when hovered */
+  	.flip-container:hover .flipper, .flip-container.hover .flipper {
+  		transform: rotateY(180deg);
+  	}
+
+  .flip-container, .front, .back {
+  	width: 690px;
+  	height: 300px;
+  }
+
+
+
+  /* flip speed goes here */
+  .flipper {
+  	transition: 0.6s;
+  	transform-style: preserve-3d;
+
+  	position: relative;
+  }
+
+  /* hide back of pane during swap */
+  .front, .back {
+  	backface-visibility: hidden;
+
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  }
+
+  /* front pane, placed above back */
+  .front {
+  	z-index: 2;
+  	/* for firefox 31 */
+  	transform: rotateY(0deg);
+      background-color: #9EBC51;
+      border-radius: 0 0 50px 0;
+
+  }
+
+  /* back, initially hidden pane */
+  .back {
+  	transform: rotateY(180deg);
+      background-color: #9EBC51;
+      border-radius: 0 0 0 50px;
+  }
+  #cardBack{
+    font-size: 16pt;
+  }
+  #cardFront {
+    text-align: center;
+vertical-align: middle;
+line-height: 250px;
+  }
+
+  /* Flip animation css */
+
+/* --  Menu NAV --  */
+
+#menu{
+  background-color: aquamarine;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+}
+#menu:hover{
+  background-color: aquamarine;
+  width:120px;
+  height:120px;
+  margin-top:-10px;
+  margin-left:-10px;
+  border-radius: 50%;
+  line-height: 120px;
+  font-size: 20pt;
+}
+/*
+#block{
+  position:absolute;
+  left: 130px;
+  top:0;
+  width:300px;
+  height:300px;
+  z-index: 2;
+  display: block;
+}
+*/
+#nav{
+  text-align: center;
+  line-height: 50px;
+}
+#homeNav {
+  position:absolute;
+  top:5px;
+  left:5px;
+  background-color: aquamarine;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
+  z-index: -1;
+}
+#destNav{
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: aquamarine;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+
+}
+#aboutNav{
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: aquamarine;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+#contactNav{
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: aquamarine;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+#quizNav{
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: aquamarine;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+
+/* -- MENU NAV -- */

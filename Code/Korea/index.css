@@ -1,3 +1,349 @@
-#body{}
-#display{}
-#controls{}
+body {
+	background-color: #F5F5F5;
+}
+
+/* ------ Navigation Bar -------- */
+#navBar {
+	width: 100vw;
+	height: 45px;
+	background-color:white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	border-bottom: 1px solid #D3D3D3;
+	overflow: auto;
+}
+
+.linkNav {
+	text-decoration-style: none;
+	color: black;
+	text-decoration-line: none;
+	font-family: 'Mukta Mahee', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 2px 20px 2px 20px;
+	margin: 12px 5px 14px 0px;
+	float: right;
+}
+a {
+}
+a:hover {
+	color: navy;
+}
+#search {
+	background-color: white;
+	border: .5px solid grey;
+	border-radius: 15px;
+	text-align: left;
+    margin-right: 10%;
+}
+
+#Logo {
+	width: 100px;
+	position: fixed;
+	top: -5px;
+	left: 0px;
+	margin-top: 10px;
+	margin-left: 10%;
+}
+
+/* ----------- body Content ------------ */
+
+#wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 1600px;
+	height: 1200px;
+	margin-top: 45px;
+	padding-top: 50px;
+	text-align: center;
+	background-color: white;
+}
+
+
+
+/* --------- FONTS ------ */
+.subheader {
+	font-family: 'oswald', sans-serif;
+}
+
+.para {
+	font-family: 'Mukta Mahee', sans-serif;
+}
+/* --------- Breakfast Section -----------------*/
+
+#wrapper2 {
+	width: 1600px;
+	height: 500px;
+	display: flex;
+	background-color: white;
+}
+
+/* --------- Flipping Card Section --------------*/
+
+#culturephoto {
+	display: inline-block;
+	margin-top: 50px;
+}
+
+.items {
+	flex-grow: 1;
+	margin:  10px;
+	overflow: hidden; 
+}
+#cultureCard {
+	width: 150px;
+	height: 300px;
+	
+}
+
+/* Centering the card */
+
+#cultureWrapper {
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	cursor: pointer;
+}
+
+/* Flip animation css */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 690px;
+	height: 400px;
+}
+
+        
+        
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+    background-color: #9EBC51;
+	  /* round corners off if needed */
+    border-radius: 0 0 0 0;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+    background-color: #9EBC51;
+	  /* round corners off if needed */
+    border-radius: 0 0 0 0; 
+	text-align: left;
+}
+
+/* Flip animation css */
+
+/* --- Traditional Breakfast Content ------ */
+#wrapper3 {
+	width: 1600px;
+	height: 550px;
+	background-color: white;
+	text-align: left;
+  padding-top: 20px;
+}
+
+#traditionalContent {
+	text-align: left;
+	width: 900px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+/* -------    Footer --------- */
+
+#footer {
+	width: 100%;
+	height: 200px;
+	background-color:#6c6b6a;
+	display: flex;
+	text-align: left;
+}
+
+.footerSec {
+	width: 20%;
+	height: 200px;
+	margin:1%;
+	flex-grow: 3;
+}
+#PaladineFooter {
+	color: white;
+	margin-left: 5%;
+    margin-top: 5%;
+}
+#aboutusFooter {
+	color: white;
+	padding-top: 5%;;
+		
+}
+.socialmediaIcons {
+	width: 40px;
+	padding:10px;
+}
+#socialmediaFooter {
+	text-align: center;
+	position: relative;
+	top: 100px;
+	left: 0px;
+	height: 50px;
+}
+#NavFooter {
+	padding-top: 5%;;
+	padding-bottom: 5%;
+	background-color:#6c6b6a;
+}
+.footerNav {
+	width: 100%;
+	font-family: 'Mukta Mahee', sans-serif;
+	text-decoration-line: none;
+	text-align: center;
+	color: white;
+	padding-left: 6%;
+	padding-right:6%;
+}
+
+/* -------   BOX CAPTION  --------- */
+
+#mainwrapper {
+  margin:0 auto		
+}
+#mainwrapper #tools {
+  text-align:center;
+  font-size:25px;
+  margin-bottom:10px;
+}
+
+#mainwrapper .box .title {
+	text-align: left;
+	font-family: 'Oswald';
+	font-size: 18pt;
+}
+
+#mainwrapper .box p {
+	margin: 3px 0px 0px 0px;
+	padding:0px 0px 8px 8px;
+	text-align:left;
+}
+
+#mainwrapper .box .simple-caption p {
+  display:none;
+}
+
+#mainwrapper {
+	font: 12pt 'Mukta Mahee', sans-serif;
+	height: auto;
+	text-align: center;
+	width: 960px;
+}
+
+/* Image Box Style */
+#mainwrapper .box {
+	cursor: pointer;
+	height: 506px;
+	float: left;
+	margin: 5px;
+	position: relative;
+	overflow: hidden;
+	width: 900px;
+}
+
+#mainwrapper .box #bg-block{
+  position: absolute;
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+  background-position:0px 0px;
+  width:100%;
+  height:100%;
+	left: 0;
+	transition: all 300ms ease-out;
+  
+}
+
+
+/* Caption Common Style */
+#mainwrapper .box .caption {
+	background-color: rgba(0,0,0,0.8);
+	position: absolute;
+	color: black;
+	z-index: 100;
+	transition: all 300ms ease-out;
+	right: 0;
+}
+
+/** Caption **/
+#mainwrapper .box .simple-caption {
+	height: 200px;
+	width: 450px;
+	display: block;
+	bottom: -220px;
+	text-align: center;
+  padding: 20px;
+	opacity: 0.75;
+	transform: translateY(-30%);
+}
+
+#mainwrapper .box:hover .simple-caption p{
+  display:block;
+}
+
+/** Caption hover behaviour **/
+
+#mainwrapper .box:hover .simple-caption {
+	opacity: 1;
+	transform: translateY(-100%);
+}
+
+#mainwrapper .box:hover .scale-caption.title, #mainwrapper .box:hover .scale-caption p {
+	transform: translateX(200px);
+}
+
+#mainwrapper .box .cap1{
+  background-color: #9EBC51;
+}
+
+#mainwrapper .box .bg-block-1{
+  background-image: url("4.jpg");
+}
+
+#mainwrapper .box .bg-block-2{
+  background-image: url("2.jpg");
+}

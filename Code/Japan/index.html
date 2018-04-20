@@ -11,14 +11,14 @@
 		<img src="LogoH.svg" id="Logo"/>
 		<div class="topnav">
   			<input type="text" class="linkNav" placeholder="Search" id="search">
-	  		<a href="#about" class="linkNav">About</a>
-			<a href="#contact" class="linkNav">Contact</a>
-			<a href="#quiz" class="linkNav">Quiz</a>
-			<a href="#news" class="linkNav">Destination</a>
-			<a href="#home" class="linkNav">Home</a>
+	  		<a href="../About/index.html" class="linkNav">About</a>
+			<a href="../Contact/index.html" class="linkNav">Contact</a>
+			<a href="../quiz/index.html" class="linkNav">Quiz</a>
+			<a href="../PostCard/index.html" class="linkNav">Destination</a>
+			<a href="../Landing/index.html" class="linkNav">Home</a>
 		</div>
 	</div>
-	
+
 	<div id="wrapper">
 	<img src="Japan.jpg" id="japanImg"/>
 		<div id="nebutaF">
@@ -27,23 +27,35 @@
 				<p class="para">The Aomori Nebuta Festival is a Japanese fire festival held annually between August 2nd and 7th in Aomori city. During the festival, massive lanterns floats based on kabuki or mythical stories  parade through the city of Aomori. On the evenings of August 2nd through 6th and daytime of the 7th, colorfully dressed Haneto (nebuta dancers) as well as flutists and drummers convey the nebuta floats through the city. On the night of the 7th, the nebutas are placed in boats and ferried around the Aomori Bay as fireworks light up the night sky to conclude the festival.
 				The Aomori Nebuta Festival has been designated as an Important Intangible Folk Cultural Properties of Japan in 1980.</p>
 		</div>
-		
-		
-		
+
+
+
 		<!-- FLIPPING CARD ANIMATION -->
-		
-		
+
+
 		<div id="wrapper2">
-			<div id="cultureCard" class="items">
+			<!--<div id="cultureCard" class="items">
 				<div id="japanFront" class="subheader">Chopsticks</div>
 					<div id="japanBack"><p class="para">Many Japanese traditions concerning table manners surround the use of chopsticks. Not only should they be held correctly, one must never leave chopsticks standing vertically in their bowl of food, as this resembles an offering made at funerals. One must also refrain from eating directly from a communal dish, and should try not to hover with their chopsticks when deciding on what to eat next.</p>	</div>
-							</div>
+                </div> -->
+
+            <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	           <div class="flipper">
+		          <div class="front">
+			         <h1 id="japanCult">Chopsticks</h1>
+		          </div>
+		          <div class="back">
+			         <p id="japancultInfo">Many Japanese traditions concerning table manners surround the use of chopsticks. Not only should they be held correctly, one must never leave chopsticks standing vertically in their bowl of food, as this resembles an offering made at funerals.</p>
+		          </div>
+	           </div>
+            </div>
+
 				<img src="JapanB.jpg" class="items" id="japanbreakfastImg"/>
 		</div>
-		
-		
+
+
 		<!-- TRADITIONAL BREAKFAST CONTENT -->
-	
+
 		<div id="wrapper3">
 			<div id="traditionalContent">
 			<h1 class="subheader">Traditional Breakfast in Japan</h1>
@@ -56,7 +68,7 @@
 			Although a Japanese breakfast comprises what Westerners might view as a complete meal appropriate for lunch or dinner, it is not intended to be heavy or too filling. Portion sizes for breakfast are adjusted to meet one's appetite, and dishes tend to be lighter, for example, they tend not to be greasy, deep fried, or rich.</p>
 			</div>
 		</div>
-		
+
 			<div id="footer">
 				<div id="PaladineFooter" class="footerSec">
 				<h1 class="subheader">PALADINE</h1>
@@ -71,19 +83,19 @@
 					<img src="instagram.svg" class="socialmediaIcons"/>
 					<img src="twitter.svg" class="socialmediaIcons"/>
 				</div>
-				
+
 
 		</div>
-		
+
 		<div id="NavFooter">
-			<a href="#about" class="footerNav">About</a>
-			<a href="#contact" class="footerNav">Contact</a>
-			<a href="#quiz" class="footerNav">Quiz</a>
-			<a href="#news" class="footerNav">Destination</a>
-			<a href="#home" class="footerNav">Home</a>
+      <a href="../About/index.html" class="footerNav">About</a>
+      <a href="../Contact/index.html" class="footerNav">Contact</a>
+      <a href="../quiz/index.html" class="footerNav">Quiz</a>
+      <a href="../PostCard/index.html" class="footerNav">Destination</a>
+      <a href="../Landing/index.html" class="footerNav">Home</a>
 				</div>
 		</div>
-	
+
 	<script src="index.js"></script>
 </body>
 </html>
