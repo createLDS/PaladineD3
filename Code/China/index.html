@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>China</title>
     <link href="index.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee|Oswald" rel="stylesheet">
 </head>
 <body>
-    <div id="display"></div>
-    <div id="controls"></div>
+    <div id="navBar">
+		<img src="LogoH.svg" id="Logo"/>
+		<div class="topnav">
+  			<input type="text" class="linkNav" placeholder="Search" id="search">
+        <a href="../About/index.html" class="linkNav">About</a>
+			<a href="../Contact/index.html" class="linkNav">Contact</a>
+			<a href="../quiz/index.html" class="linkNav">Quiz</a>
+			<a href="../PostCard/index.html" class="linkNav">Destination</a>
+			<a href="../Landing/index.html" class="linkNav">Home</a>
+		</div>
+	</div>
+
+<div id="wrapper">
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="China1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="China2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="China3.jpg" style="width:100%">
+  </div>
+
+</div>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+	<div id="dragonboatContent">
+	<h1>Dragon Boat Festival</h1>
+	<p>The Dragon Boat Festival is a celebration where people eat rice dumplings drink wine, and race dragon boats against each other. Other activities include hanging piece of mythic guardian figure, mugwortm and calamus. In the Republic of China, the festival was also celebrated as "Poets' Day" in honor of Qu Yuan, who is known as China's first poet. Chinese citizens traditionally throw bamboo leaves filled with cooked rice into the water and it is also customary to eat tzungtzu and rice dumplings. </p>
+	</div>
+		<div id="dragonboatContainer">
+
+	<img src="DragonBoatFest.jpg" alt="DragonBoat" id="dragonImg"/>
+		</div>
+
+
+
+		<div id="InfoCard" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+    <div class="flipper">
+
+        <div class="front">
+			 <h1 id="culture">Tipping</h1>
+		  </div>
+
+        <div class="back">
+            <p id="cultureinfo">In Mainland China, tipping or gratuities are not common practice at restaurants. Although it has become the norm to tip the tour guide and driver, hotel bellboy in recognition of their good service.
+		  </div>
+    </div>
+</div>
+	<img src="chinaBreak.jpg" id="chinabreak">
+
+	<div id="breakfastcontent">
+	<h1>Typical Breakfast in China</h1>
+		<p>Breakfast is not a terribly important meal in China. Chinese people start the day early, but that means breakfast is often just a question of wolfing down whatever’s to hand in order to fill the belly until lunchtime.
+
+A typical Chinese breakfast is a bowl of congee (粥), a rice porridge brightened up with the addition of pickles, peanuts or meat. Beijingers also love youtiao (油条), deep fried sticks of dough to dip in huge bowls of steaming soya milk (豆浆). There are also puffy sheets of steamed bread, also to be dipped in soya milk. Any of these breakfasts could be accompanied by a couple of boiled eggs.</p>
+	</div>
+    <div id="footer">
+				<div id="PaladineFooter" class="footerSec">
+				<h1 class="subheader">PALADINE</h1>
+				<p class="para">Paladine is a website designed by students from BCIT. The brand means a "Pal" you can travel with and "dine" with when you travel together.</p>
+				</div>
+				<div id="aboutusFooter" class="footerSec">
+				<p class="para">About Us</p>
+				<p class="para">We decided to build this website to help educate travellers who are interested in places in Asia. So far, Paladine has only come up with a few places in Asia but we plan on  </p>
+				</div>
+				<div id="socialmediaFooter" class="footerSec">
+					<img src="facebook.svg" class="socialmediaIcons"/>
+					<img src="instagram.svg" class="socialmediaIcons"/>
+					<img src="twitter.svg" class="socialmediaIcons"/>
+				</div>
+
+
+		</div>
+
+		<div id="NavFooter">
+      <a href="../About/index.html" class="footerNav">About</a>
+      <a href="../Contact/index.html" class="footerNav">Contact</a>
+      <a href="../quiz/index.html" class="footerNav">Quiz</a>
+      <a href="../PostCard/index.html" class="footerNav">Destination</a>
+      <a href="../Landing/index.html" class="footerNav">Home</a>
+				</div>	</div>
     <script src="index.js"></script>
 </body>
 </html>

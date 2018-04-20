@@ -1,0 +1,250 @@
+body {
+	background-color: #F5F5F5;
+}
+
+/* ------ Navigation Bar -------- */
+
+#navBar {
+	width: 100vw;
+	height: 45px;
+	background-color:white;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	border-bottom: 1px solid #D3D3D3;
+	overflow: auto;
+}
+
+.linkNav {
+	text-decoration-style: none;
+	color: black;
+	text-decoration-line: none;
+	font-family: 'Mukta Mahee', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	padding: 2px 20px 2px 20px;
+	margin: 12px 5px 14px 0px;
+	float: right;
+}
+
+a {
+}
+
+a:hover {
+	color: navy;
+}
+#search {
+	background-color: white;
+	border: .5px solid grey;
+	border-radius: 15px;
+	text-align: left;
+    margin-right: 10%;
+}
+
+#Logo {
+	width: 100px;
+	position: fixed;
+	top: -5px;
+	left: 0px;
+	margin-top: 10px;
+	margin-left: 10%;
+}
+
+/* ----------- body Content ------------ */
+
+#wrapper {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+	width: 1600px;
+	height: 900px;
+	margin-top: 45px;
+	padding-top: 50px;
+	text-align: center;
+	background-color: white;
+}
+
+/* --------- FONTS ------ */
+
+.subheader {
+	font-family: 'oswald', sans-serif;
+}
+
+.para {
+	font-family: 'Mukta Mahee', sans-serif;
+}
+
+/* --------- Breakfast Section -----------------*/
+
+#wrapper2 {
+	width: 1600px;
+	height: 500px;
+	display: flex;
+	margin-top: 10%;
+	background-color: white;
+}
+
+/* --- About Content ------ */
+
+#aboutContent {
+	text-align: left;
+	width: 900px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+/* -------    Footer --------- */
+
+#footer {
+	width: 100%;
+	height: 200px;
+	background-color:#6c6b6a;
+	display: flex;
+	text-align: left;
+}
+
+.footerSec {
+	width: 20%;
+	height: 200px;
+	margin:1%;
+	flex-grow: 3;
+}
+#PaladineFooter {
+	color: white;
+	margin-left: 5%;
+    margin-top: 5%;
+}
+#aboutusFooter {
+	color: white;
+	padding-top: 5%;;
+		
+}
+.socialmediaIcons {
+	width: 40px;
+	padding:10px;
+}
+#socialmediaFooter {
+	text-align: center;
+	position: relative;
+	top: 100px;
+	left: 0px;
+	height: 50px;
+}
+#NavFooter {
+	padding-top: 5%;;
+	padding-bottom: 5%;
+	background-color:#6c6b6a;
+}
+.footerNav {
+	width: 100%;
+	font-family: 'Mukta Mahee', sans-serif;
+	text-decoration-line: none;
+	text-align: center;
+	color: white;
+	padding-left: 6%;
+	padding-right:6%;
+}
+
+
+/* -------    BOX FLIP    --------- */
+
+/* Box properties */
+figure.boxFlip {
+	position: relative;
+	float: left;
+	overflow: hidden;
+  margin: 10px 1%;
+  max-width: 800px;
+  max-height: 450px;
+  width: 100%;
+	font-family: 'Mukta Mahee', sans-serif;
+  color: black;
+  text-align: left;
+  background-color: #FFB71B;
+  perspective: 50em;
+}
+
+/* Box transitions */
+figure.boxFlip * {
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+/* Image layer */
+figure.boxFlip img {
+  opacity: 1;
+  width: 100%;
+  transform-origin: 50% 100%;
+}
+
+/* Caption layer */
+figure.boxFlip figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: 50% -50%;
+  z-index: 1;
+  opacity: 0;
+  padding: 20px 30px;
+}
+
+
+/* Text properties */
+figure.boxFlip h3,
+figure.boxFlip p {
+  line-height: 1.5em;
+}
+
+figure.boxFlip h3 {
+  margin: 0;
+	font-size: 30pt;
+  text-transform: uppercase;
+	font-family: 'oswald', sans-serif;
+}
+
+figure.boxFlip p {
+  font-size: 14pt;
+  margin: 0 0 15px;
+}
+
+figure.boxFlip .contactUs {
+  border: 2px solid #000000;
+	margin-top: 1.3em;
+  padding: 0.5em 1em;
+  font-size: 14pt;
+  text-decoration: none;
+  color: #000000;
+  display: inline-block;
+}
+
+figure.boxFlip .contactUs:hover {
+  background-color: #EA0029;
+  color: #000000;
+}
+
+/* Image transition end point */
+
+figure.boxFlip:hover img,
+figure.boxFlip.hover img {
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+/* Caption transition end point */
+
+figure.boxFlip:hover figcaption,
+figure.boxFlip.hover figcaption {
+  transform: rotateX(0deg);
+  opacity: 1;
+  transition-delay: 0.2s;
+}

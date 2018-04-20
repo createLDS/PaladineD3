@@ -42,5 +42,53 @@ Angus - Edited Japan page
 -Worked on Post Card page
  - added 6 cards
  - made them all flip
-- Added quiz folder
+ - Added quiz folder
  - only 2 questions but logic works
+
+2018-04-13 5:04 pm Patrick
+- Reuploaded poast card 
+ - Linked all the countries to respective index.html
+-Reuploaded japan index.html.css.js
+
+2018-04-14 7-9 pm Lorenzo 
+- Started About page
+  - Added team description
+  - Added Box flip CSS animation
+  - Color corrected & added team photo
+
+2018-04-15 7:57pm Lorenzo
+- Worked on About page
+  - Removed some redundant code
+  - Adjusted box flip content and code
+- Started Contact page
+  - Added e-mail form
+
+2018-04-15 11:59pm Patrick
+- Worked on Thailand page
+ - added content
+ - added menu animation
+- added imgs to img folder
+
+
+
+2018-04-17 12:10pm Patrick
+
+- Worked on quiz page
+- added some CSS
+- added menu button
+- Worked on Thailand
+- fixed menu button
+
+2018-04-18 8:52pm Lorenzo
+- Started Korea page
+  - Added all content and images
+  - Added image animation: caption hover
+
+2018-04-17 11:59pm Patrick
+-Work on Philippines page
+
+2018-04-18 1:00am Patrick
+-All Links linked
+
+2018-04-18 9:23am Lorenzo
+- Updated landing page “Who are we?” description
