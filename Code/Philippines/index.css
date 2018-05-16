@@ -9,6 +9,12 @@
   	font-family: 'Mukta Mahee', sans-serif;
   }
 
+  hr {
+  	width: 700px;
+  	text-align: center;
+  	margin: auto;
+  }
+
 #display{
   width: 1600px;
   height: auto;
@@ -47,15 +53,39 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 40px;
+  margin-bottom: -40px;
 }
 #bInfo {
+  /*
   width:700px;
   height: 300px;
+  */
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left:0;
+  right:0;
+  margin: auto;
 }
 #pan{
   width: 576px;
   height: 432px;
+}
+
+.wrapContent{
+  text-align: center;
+  display:flex;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+.inContent{
+  width: 600px;
+  height: 200px;
+  position: relative;
+  left:0;
+  right:0;
+  margin: auto;
 }
 
 #wrap3{
@@ -71,7 +101,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 #boat{
   width:700px;
@@ -87,157 +118,216 @@
   z-index:1;
 }
 
-  /* --  Menu NAV --  */
+/* --  Menu NAV --  */
 
-  #menu{
-    background-color: aquamarine;
-    width:100px;
-    height:100px;
-    border-radius: 50%;
-      text-align: center;
-      line-height: 100px;
-  }
-  #menu:hover{
-    background-color: aquamarine;
-    width:120px;
-    height:120px;
-    margin-top:-10px;
-    margin-left:-10px;
-    border-radius: 50%;
-    line-height: 120px;
-    font-size: 20pt;
-  }
-  /*
-  #block{
-    position:absolute;
-    left: 130px;
-    top:0;
-    width:300px;
-    height:300px;
-    z-index: 2;
-    display: block;
-  }
-  */
-  #nav{
-    text-align: center;
-    line-height: 50px;
-  }
-  #homeNav {
-    position:absolute;
-    top:5px;
-    left:5px;
-    background-color: aquamarine;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    opacity: 0;
-    transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
-    z-index: -1;
-  }
-  #destNav{
-    position:absolute;
-    top:5px;
-    left: 130px;
-    background-color: aquamarine;
-    width:300px;
-    height:50px;
-    border-radius: 5%;
-    opacity: 0;
-    transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
-      display: none;
+#menu{
+  background-color: #FFB71B;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+	font-family: 'oswald', sans-serif;
+	font-size: 16pt;
+  font-weight: bold;
+}
 
-  }
-  #aboutNav{
-    position:absolute;
-    top:5px;
-    left: 130px;
-    background-color: aquamarine;
-    width:300px;
-    height:50px;
-    border-radius: 5%;
-    opacity: 0;
-    transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
-      display: none;
-  }
-  #contactNav{
-    position:absolute;
-    top:5px;
-    left: 130px;
-    background-color: aquamarine;
-    width:300px;
-    height:50px;
-    border-radius: 5%;
-    opacity: 0;
-    transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
-      display: none;
-  }
-  #quizNav{
-    position:absolute;
-    top:5px;
-    left: 130px;
-    background-color: aquamarine;
-    width:300px;
-    height:50px;
-    border-radius: 5%;
-    opacity: 0;
-    transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
-      display: none;
-  }
+#menu:hover{
+  background-color: #EA0029;
+	color: white;
+  width:120px;
+  height:120px;
+  margin-top:-10px;
+  margin-left:-10px;
+  border-radius: 50%;
+  line-height: 120px;
+  font-size: 20pt;
+  transition: 0.25s;
+}
 
+/*
+#block{
+  position:absolute;
+  left: 130px;
+  top:0;
+  width:300px;
+  height:300px;
+  z-index: 2;
+  display: block;
+}
+*/
+#nav{
+  text-align: center;
+  line-height: 50px;
 
-  /* -- MENU NAV -- */
+}
 
-  /* -------    Footer --------- */
+#homeNav {
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left:5px;
+  background-color: #FFB71B;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
+  z-index: 1;
+}
 
-  #footer {
-    width: 100%;
-    height: 200px;
-    background-color:#f1355f;
-    display: flex;
-    text-align: left;
-  }
+#homeNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
 
-  .footerSec {
-    width: 20%;
-    height: 200px;
-    margin:1%;
-    flex-grow: 3;
-  }
-  #PaladineFooter {
-    color: white;
-    margin-left: 5%;
-      margin-top: 5%;
-  }
-  #aboutusFooter {
-    color: white;
-    padding-top: 5%;;
+#destNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
 
-  }
-  .socialmediaIcons {
-    width: 40px;
-    padding:10px;
-  }
-  #socialmediaFooter {
-    text-align: center;
-    position: relative;
-    top: 100px;
-    left: 0px;
-    height: 50px;
-  }
-  #NavFooter {
-    padding-top: 5%;;
-    padding-bottom: 5%;
-    background-color:#f1355f;
-  }
-  .footerNav {
-    width: 100%;
-    font-family: 'Mukta Mahee', sans-serif;
-    text-decoration-line: none;
-    text-align: center;
-    color: white;
-    padding-left: 6%;
-    padding-right:6%;
-  }
+#destNav:hover {
+  background-color: #EA0029;
+	color: white;
+  transition: 0.25s;
+}
+
+#aboutNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#aboutNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#contactNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#contactNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#quizNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#quizNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#controls{
+	position:fixed;
+}
+
+/* -- MENU NAV -- */
+
+/* --------------- Footer ---------------- */
+
+#footer {
+width: 100%;
+height: 100px;
+background-color:#6c6b6a;
+display: flex;
+text-align: left
+}
+
+.footerSec {
+width: 20%;
+height: 200px;
+margin:1%;
+flex-grow: 1;
+}
+#PaladineFooter {
+color: white;
+margin-left: 5%;
+}
+#aboutusFooter {
+color: white;
+
+}
+.socialmediaIcons {
+width: 30px;
+padding:10px;
+}
+#socialmediaFooter {
+text-align: center;
+position: relative;
+top: 100px;
+left: 0px;
+height: 50px;
+}
+#NavFooter {
+padding-top: 10%;;
+padding-bottom: 5%;
+background-color:#6c6b6a;
+  text-align: center;
+text-decoration-line: none;
+
+}
+.footerNav {
+width: 100%;
+font-family: 'Mukta Mahee', sans-serif;
+text-decoration-line: none;
+color: white;
+padding-left: 6%;
+padding-right:6%;
+}
 
   /* Flip animation css */
 
@@ -292,6 +382,14 @@
   }
   #cardBack{
     font-size: 16pt;
+
+    width: 70%;
+    position: absolute;
+    top:100px;
+    left:0;
+    bottom:0;
+    right:0;
+    margin: auto;
   }
   #cardFront {
     text-align: center;

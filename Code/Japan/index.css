@@ -1,212 +1,195 @@
-body {
-	background-color: #F5F5F5;
-}
+/* ------ NAVIGATION BAR -----*/
 
-/* ------ Navigation Bar -------- */
-#navBar {
-	width: 100vw;
-	height: 45px;
-	background-color:white;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1;
-	border-bottom: 1px solid #D3D3D3;
-	overflow: auto;
-}
-
-.linkNav {
-	text-decoration-style: none;
-	color: black;
-	text-decoration-line: none;
-	font-family: 'Mukta Mahee', sans-serif;
-	font-size: 12px;
-	text-align: center;
-	padding: 2px 20px 2px 20px;
-	margin: 12px 5px 14px 0px;
-	float: right;
-}
-a {
-}
-a:hover {
-	color: navy;
-}
-#search {
-	background-color: white;
-	border: .5px solid grey;
-	border-radius: 15px;
-	text-align: left;
-    margin-right: 10%;
-}
-
-#Logo {
-	width: 100px;
-	position: fixed;
-	top: -5px;
-	left: 0px;
-	margin-top: 10px;
-	margin-left: 10%;
-}
-
-/* ----------- body Content ------------ */
-
-#wrapper {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
-	margin: auto;
-	width: 1380px;
-	height: 900px;
-	margin-top: 45px;
-	padding-top: 50px;
-	text-align: center;
-}
-
-#japanImg {
-	width: 500px;
-	margin-left: 1%;
-	border-radius: 5px;
-	float: left;
-}
-
-#nebutaImg {
-	width: 500px;
-	border-radius: 5px;
-}
-
-#nebutaF {
-	height: 600px;
-	width: 605px;
-	margin-top: 3%;
-	display: inline-block;
-	clear: left;
-	font-family: 'Mukta Mahee', sans-serif;
-	line-height: 35px;
-	text-align: center;
-}
-
-
-
-/* --------- FONTS ------ */
-h1 {
+/* ------ BODY PAGE -----*/
+.subheader {
 	font-family: 'oswald', sans-serif;
 }
 
+body {
+	overflow: auto;
+}
+#headerImg	 {
+	margin-top: -60px;
+	width: 100%;
+	overflow: hidden;
+}
+#taiwaninfoContainer {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	float: left;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#taiwanHeader {
+	text-align: left;
+}
+#taiwanInfo {
+	width: 70%;
+	height: 100px;
+	margin: auto;
+}
+
+#wrapper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    margin-top: 45px;
+    width: 1536px;
+    height: auto;
+}
+
+h1 {
+	font-family: 'oswald', sans-serif;
+}
 p {
 	font-family: 'Mukta Mahee', sans-serif;
-}
-/* --------- Breakfast Section -----------------*/
-
-#wrapper2 {
-	width: 1380px;
-	height: 500px;
-	display: flex;
-	margin-top: 10%;
+	text-align: justify;
 }
 
-/* --------- Flipping Card Section --------------*/
-
-.items {
-	flex-grow: 1;
-	margin:  10px;
-	overflow: hidden; 
-}
-#cultureCard {
-	width: 150px;
-	height: 300px;
+.foodContainer {
+	width 100%;
+	margin: 5%;
 }
 
-#japanbreakfastImg {
-    height: 400px;
-    border-radius: 10px;
-    margin-right: 40px;
-    margin-top: -20px;
+img {
+	float: left;
+}
+.typeFood {
+	width: 360px;
+	display: inline-block;
+	margin-left: 50px;
 }
 
-#japanCult {
-	margin-top: 17%;
+.infoFood {
+	width: 450px;
+	display: inline-block;
+	margin-left: 100px;
 }
 
-#japancultInfo{
-	padding: 10%;
+/* --------------------     entire container, keeps perspective --------- */
+#CardContainer{
+	width: 100%;
 }
-/* entire container, keeps perspective */
+#InfoCard {
+	text-align: center;
+	margin: auto;
+}
 .flip-container {
 	perspective: 1000px;
-	margin-top: 2%;
 }
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+/* --------------------flip the pane when hovered -----------------*/
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
 
 .flip-container, .front, .back {
-	width: 550px;
+	width: 690px;
 	height: 300px;
+	text-align: center;
 }
-
-  
-        
-/* flip speed goes here */
+/* ------------ flip speed goes here ------------*/
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
 }
-
-/* hide back of pane during swap */
+/* ----------------hide back of pane during swap -----------------*/
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
 }
-
-/* front pane, placed above back */
+/* -----------------front pane, placed above back -------------------*/
 .front {
 	z-index: 2;
 	transform: rotateY(0deg);
     background-color: #9EBC51;
-    border-radius: 10px;
 }
-
-/* back, initially hidden pane */
+#geisha {
+	background-image: url(Geisha-100.jpg);
+}
+#home {
+	background-image: url(Ramen-100.jpg);
+}
+/* ----------------back, initially hidden pane -------------------*/
 .back {
 	transform: rotateY(180deg);
     background-color: #9EBC51;
-    border-radius: 10px;
 }
 
-/* Flip animation css */
-
-/* --- Traditional Breakfast Content ------ */
-#wrapper3 {
-	width: 1380px;
-	height: 400px;
-	text-align: left;
-    padding-top: 20px;
-    margin-top: -6%;
+#cultureType {
+	padding: 7%;
+    margin-top: 1%;
+	color: white;
+	padding-left: 100px;
 }
-
-#traditionalContent {
-	text-align: left;
-	width: 900px;
-	position: relative;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	bottom: 0px;
+#cultureInfo {
+	padding: 7%;
+    margin-top: 6%;
+}
+#ramen {
+	color: white;
+}
+hr {
+	width: 700px;
+	text-align: center;
 	margin: auto;
 }
 
-/* -------    Footer --------- */
+
+/* sky lantern section */
+
+#sky1 {
+	position: relative;
+	top: -50px;
+	left: 0px;
+}
+#sky2 {
+	position: relative;
+	top: 200px;
+	right: 220px;
+}
+#sky3 {
+	position: relative;
+	top: 0px;
+	right: 00px;
+}
+
+#twnfestImg {
+	width: 900px;
+	height: 400px;
+}
+
+#twmfestInfo {
+	position: relative;
+	top: -350px;
+}
+
+#twnfestpara {
+	float: left;
+	width: 550px;
+	position: relative;
+	left: 50px;
+}
+#festContainer {
+	margin-top: 50px;
+	width: 100%;
+	height: 600px;
+	background-image: url(Banner%20Gion-100.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+/* --------------- Footer ---------------- */
 
 #footer {
 	width: 100%;
 	height: 200px;
-	background-color:#f1355f;
+	background-color:#6c6b6a;
 	display: flex;
 	text-align: left;
 }
@@ -220,15 +203,16 @@ p {
 #PaladineFooter {
 	color: white;
 	margin-left: 5%;
-    margin-top: 4.1%;
+  margin-top: 3.25%;
 }
+
 #aboutusFooter {
 	color: white;
-	padding-top: 5%;;
-		
+	padding-top: 2.25%;;
+
 }
 .socialmediaIcons {
-	width: 40px;
+	width: 30px;
 	padding:10px;
 }
 #socialmediaFooter {
@@ -239,23 +223,178 @@ p {
 	height: 50px;
 }
 #NavFooter {
-	padding-top: 5%;;
+	padding-top: 10%;;
 	padding-bottom: 5%;
-	background-color:#f1355f;
+	background-color:#6c6b6a;
+    text-align: center;
+	text-decoration-line: none;
+
 }
 .footerNav {
 	width: 100%;
 	font-family: 'Mukta Mahee', sans-serif;
 	text-decoration-line: none;
-	text-align: center;
 	color: white;
 	padding-left: 6%;
 	padding-right:6%;
 }
 
 
+/* --  Menu NAV --  */
 
+#menu{
+  background-color: #FFB71B;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+	font-family: 'oswald', sans-serif;
+	font-size: 16pt;
+  font-weight: bold;
+}
 
+#menu:hover{
+  background-color: #EA0029;
+	color: white;
+  width:120px;
+  height:120px;
+  margin-top:-10px;
+  margin-left:-10px;
+  border-radius: 50%;
+  line-height: 120px;
+  font-size: 20pt;
+  transition: 0.25s;
+}
 
+/*
+#block{
+  position:absolute;
+  left: 130px;
+  top:0;
+  width:300px;
+  height:300px;
+  z-index: 2;
+  display: block;
+}
+*/
+#nav{
+  text-align: center;
+  line-height: 50px;
+	
+}
 
+#homeNav {
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left:5px;
+  background-color: #FFB71B;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
+  z-index: 1;
+}
 
+#homeNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#destNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#destNav:hover {
+  background-color: #EA0029;
+	color: white;
+  transition: 0.25s;
+}
+
+#aboutNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#aboutNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#contactNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#contactNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#quizNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#quizNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#controls{
+	position:fixed;
+}
+
+/* -- MENU NAV -- */
