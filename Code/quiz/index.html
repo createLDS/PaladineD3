@@ -2,13 +2,15 @@
 <html>
 <head>
     <title>Quiz</title>
+	<link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="display">
         <div id="quizwrap">
         <div id="quizBox">
-            
+
         <h2>Paladine Quiz</h2>
         How many countries are on the web app?<br>
         <input type="radio" name="numOfCountries" value="4"/>
@@ -26,36 +28,72 @@
         <input type="radio" name="fest" value="China"/>
         <label>China</label>
             <br><hr>
-        The most common way to greet people in Taiwan is to bow.<br>
-        <input type="radio" name="Taiwan-Greet" value="T"/>
+        Other than Mandarin, what is the other widely spoken language in Taiwan?<br>
+        <input type="radio" name="Taiwan-Greet" />
+        <label>Cantonese</label>
+        <input type="radio" name="Taiwan-Greet" />
+        <label>Min-nan</label>
+        <input type="radio" name="Taiwan-Greet" />
+        <label>Japanese</label>
+          <br><hr>
+        Korea has started to adopt western breakfast. <br>
+        <input type="radio" name="Kwest" />
         <label>True</label>
-        <input type="radio" name="Taiwan-Greet" value="F"/>
+        <input type="radio" name="Kwest" />
         <label>False</label>
-        
+          <br><hr>
+        Thailand was never colonized by a European country<br>
+        <input type="radio" name="Twest" />
+        <label>True</label>
+        <input type="radio" name="Twest" />
+        <label>False</label>
+          <br><hr>
+        In Northeastern China, their very unique cuisine features what type of product?<br>
+        <input type="radio" name="Ceast" />
+        <label>Wheat products</label>
+        <input type="radio" name="Ceast" />
+        <label>Vegetable products</label>
+        <input type="radio" name="Ceast" />
+        <label>Meat Products</label>
+        <input type="radio" name="Ceast" />
+        <label>Dairy products</label>
+          <br><hr>
+        What is an Archipelago?<br>
+        <input type="radio" name="phil" />
+        <label>A lake in the Philippines</label>
+        <input type="radio" name="phil" />
+        <label>Ancient tribe</label>
+        <input type="radio" name="phil" />
+        <label>Japanese breakfast</label>
+        <input type="radio" name="phil" />
+        <label>A group of islands</label>
+
+
         </div>
-        
+
         <br>
-        
-        <button id="submit">Submit Quiz</button>
-            
-            
-         
+
+
+
+
+        <div id="results">
+          <h3>Result</h3>
+        </div>
     </div>
-    <div id="results">
-        
+    <button id="submit">Submit Quiz</button>
+    <button id="reset">Reset</button>
+
     </div>
-        
-    </div>
-        
+
     <div id="controls">
-        <div id="menu">MENU</div>
-        <div id="nav">
-        <div id="block"></div>
-        <div id="homeNav">Home</div>
-        <div id="destNav">Destination</div>
-        <div id="aboutNav">About</div>
-        <div id="contactNav">Contact</div>
-        <div id="quizNav">Quiz</div>
+      <div id="menu" class="pointer">MENU</div>
+      <div id="nav">
+        <div id="block" class="pointer"></div>
+        <div id="homeNav" class="pointer">Home</div>
+        <div id="destNav" class="pointer">Destination</div>
+        <div id="aboutNav" class="pointer">About</div>
+        <div id="contactNav" class="pointer">Contact</div>
+        <div id="quizNav" class="pointer">Quiz</div>
       </div>
     </div>
     <script src="index.js"></script>

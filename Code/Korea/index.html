@@ -9,7 +9,7 @@
 <body>
 
 	<!-- NAVIGATION BAR -->
-
+<!--
 	<div id="navBar">
 		<img src="LogoH.svg" id="Logo"/>
 		<div class="topnav">
@@ -21,7 +21,7 @@
 			<a href="../Landing/index.html" class="linkNav">Home</a>
 		</div>
 	</div>
-
+-->
 	<!-- CONTENT -->
 
 	<div id="wrapper">
@@ -47,7 +47,7 @@
             <div id="cultureWrapper">
             <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 	           <div class="flipper">
-		          <div class="front">
+		          <div id="home" class="front">
 			         <h1 class="subheader">Cultural ettiqutte in Korea</h1>
 								<p class="para">Mouse over to learn more</p>
 		          </div>
@@ -73,7 +73,6 @@
             </div>
 
 							</div>
-			<div id="culturephoto"><img src="3.jpg"></div>
 		</div>
 
 
@@ -85,16 +84,48 @@
       <div id="box-1" class="box">
 			<div id="bg-block" class="bg-block-2"></div>
 				<span class="caption simple-caption cap1">
-					<div class="title">Chuseok</div>
-				<p>Chuseok (once known as hangawi) is a major harvest festival that lasts 3 days. It is celebrated on the 15th day of the 8th month of the lunar calendar on the full moon.</p>
-				<p>As a celebration of the good harvest, Koreans visit their ancestral hometowns and share a feast of Korean traditional food such as songpyeon and rice wines.	</p>
+					<div class="title">Banchan</div>
+				<p>Banchan consists of small side dishes served along with cooked rice. As the Korean language does not distinguish between singular and plural grammatically, the word is used for both one such dish or all of them combined. The basic table setting for a meal called bansang (반상) usually consists of cooked rice, soup, gochujang or ganjang, jjigae, and kimchi.</p>
 				</span>
       </div>
 	</div>
 
 			</div>
 		</div>
+		
+		<!-- TRADITIONAL BREAKFAST CONTENT 2 -->
 
+		<div id="wrapper3">
+			<div id="traditionalContent">
+					<div id="mainwrapper">
+      <div id="box-1" class="box">
+			<div id="bg-block" class="bg-block-3"></div>
+				<span class="caption simple-caption cap1">
+					<div class="title">Kimchi</div>
+				<p>Kimchi (spicy pickled cabbage) is not only served during breakfast, but also every other meal. There are many variations of kimchi, and it is served as a side dish or cooked into soups and rice dishes. Koreans traditionally make enough kimchi to last for the entire winter season, as fermented foods can keep for several years.</p>
+				</span>
+      </div>
+	</div>
+
+			</div>
+		</div>
+		
+		<!-- TRADITIONAL BREAKFAST CONTENT 3 -->
+
+		<div id="wrapper3">
+			<div id="traditionalContent">
+					<div id="mainwrapper">
+      <div id="box-1" class="box">
+			<div id="bg-block" class="bg-block-4"></div>
+				<span class="caption simple-caption cap1">
+					<div class="title">Tost-u</div>
+				<p>This Korean breakfast sandwich is usually sold by street vendors in cities. It is commonly called tost-u (toast) or gaeran tost-u (egg toast). It is not that different from a North American egg sandwich, but the addition of cabbage and brown sugar make it uniquely Korean.</p>
+				</span>
+      </div>
+	</div>
+
+			</div>
+		</div>
 		<!-- FOOTER -->
 
 			<div id="footer">
@@ -103,8 +134,8 @@
 				<p class="para">Paladine is a website designed by students from BCIT. The brand means a "Pal" you can travel with and "dine" with when you travel together.</p>
 				</div>
 				<div id="aboutusFooter" class="footerSec">
-				<p class="para">About Us</p>
-				<p class="para">We decided to build this website to help educate travellers who are interested in places in Asia. So far, Paladine has only come up with a few places in Asia but we plan on  </p>
+				<h2 class="subheader">About Us</h2>
+				<p class="para">Our goal is to educate people who are interested in travelling to Asia. We wish to pass on the knowledge that we've learned onto aspiring travellers. </p>
 				</div>
 				<div id="socialmediaFooter" class="footerSec">
 					<img src="facebook.svg" class="socialmediaIcons"/>
@@ -116,13 +147,25 @@
 		</div>
 
 		<div id="NavFooter">
+		  <a href="../Landing/index.html" class="footerNav">Home</a>
+      <a href="../PostCard/index.html" class="footerNav">Destination</a>
       <a href="../About/index.html" class="footerNav">About</a>
       <a href="../Contact/index.html" class="footerNav">Contact</a>
       <a href="../quiz/index.html" class="footerNav">Quiz</a>
-      <a href="../PostCard/index.html" class="footerNav">Destination</a>
-      <a href="../Landing/index.html" class="footerNav">Home</a>
 				</div>
 		</div>
+
+    <div id="controls">
+      <div id="menu" class="pointer">MENU</div>
+      <div id="nav">
+        <div id="block" class="pointer"></div>
+        <div id="homeNav" class="pointer">Home</div>
+        <div id="destNav" class="pointer">Destination</div>
+        <div id="aboutNav" class="pointer">About</div>
+        <div id="contactNav" class="pointer">Contact</div>
+        <div id="quizNav" class="pointer">Quiz</div>
+      </div>
+    </div>
 
 	<script src="index.js"></script>
 </body>

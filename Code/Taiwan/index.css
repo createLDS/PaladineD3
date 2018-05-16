@@ -1,51 +1,29 @@
-/* ------ NAVIGATION BAR -----*/
-#navBar {
-	width: 100vw;
-	height: 45px;
-	background-color:white;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 1;
-	border-bottom: 1px solid #D3D3D3;
+/* ------ BODY PAGE -----*/
+.subheader {
+	font-family: 'oswald', sans-serif;
+}
+
+#headerImg	 {
+	margin-top: -60px;
+	width: 100%;
 	overflow: hidden;
 }
-
-.linkNav {
-	text-decoration-style: none;
-	color: black;
-	text-decoration-line: none;
-	font-family: 'Mukta Mahee', sans-serif;
-	font-size: 12px;
+#taiwaninfoContainer {
+	width: 100%;
+	height: 300px;
 	text-align: center;
-	padding: 2px 20px 2px 20px;
-	margin: 12px 5px 14px 0px;
-	float: right;
+	float: left;
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
-
-a {
-}
-a:hover {
-	color: navy;
-}
-#search {
-	background-color: white;
-	border: .5px solid grey;
-	border-radius: 15px;
+#taiwanHeader {
 	text-align: left;
-    margin-right: 10%;
 }
-#Logo {
-	width: 100px;
-	position: fixed;
-	top: -5px;
-	left: 0px;
-	margin-top: 10px;
-	margin-left: 10%;
+#taiwanInfo {
+	width: 70%;
+	height: 100px;
+	margin: auto;
 }
-
-
-/* ------ BODY PAGE -----*/
 
 #wrapper {
     position: absolute;
@@ -55,113 +33,52 @@ a:hover {
     bottom: 0px;
     margin: auto;
     margin-top: 45px;
-    width: 1380px;
+    width: 1536px;
     height: auto;
 }
 
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 1380px;
-  height: 600px;
-  overflow: hidden;
-    
-}
-
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    background-size: contain;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 23%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* ---------------------  taiInformation  -------------------------- */
-
-#taiInfo {
-    width: 100%;
-    height: auto;
-}
-#taiinfoImg {
-    width: 500px;
-    border-radius: 10px;
-    float: right;
-    padding: 1%;
-    margin-left:1%; 
-}
-/* ----------------------  FONT  ------------------------------ */
 h1 {
-    font-family: 'Oswald', sans-serif;
-    padding: 5px;
+	font-family: 'oswald', sans-serif;
 }
 p {
-    font-family: 'Mukta Mahee', sans-serif;
-    line-height: 38px;
-    text-align: justify;
-    padding: 10px;
+	font-family: 'Mukta Mahee', sans-serif;
+	text-align: justify;
+}
+
+.container {
+	width 100%;
+	margin: 5%;
+}
+#festbgcontainer {
+	width 100vw;
+	height: 910px;
+	margin-top: 5%;
+	background-image: url(Sky.jpg);
+
+}
+img {
+	float: left;
+}
+.typeFood {
+	width: 360px;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+.infoFood {
+	width: 450px;
+	display: inline-block;
+	margin-left: 100px;
 }
 
 /* --------------------     entire container, keeps perspective --------- */
+#CardContainer{
+	width: 100%;
+}
+#InfoCard {
+	text-align: center;
+	margin: auto;
+}
 .flip-container {
 	perspective: 1000px;
 }
@@ -173,6 +90,7 @@ p {
 .flip-container, .front, .back {
 	width: 690px;
 	height: 300px;
+	text-align: center;
 }
 /* ------------ flip speed goes here ------------*/
 .flipper {
@@ -192,87 +110,104 @@ p {
 	z-index: 2;
 	transform: rotateY(0deg);
     background-color: #9EBC51;
-    border-radius: 20px;
-
+}
+#languageFront {
+	background-image: url(Language-100.jpg);
+}
+#home {
+	background-image: url(Home-100.jpg);
 }
 /* ----------------back, initially hidden pane -------------------*/
 .back {
 	transform: rotateY(180deg);
     background-color: #9EBC51;
-    border-radius: 20px;
-
-}
-
-/* ------------ GreenCard Front Margins ------------------*/
-
-#wrapper2 {
-	width: 1380px;
-	display: flex;
-    justify-content:space-between;
 }
 
 #taiwancult {
-    text-align: center;
-    margin-top: 17%;
+	padding: 7%;
+    margin-top: 1%;
 }
-
 #taiwancultInfo {
-    padding: 7%;
+	padding: 7%;
     margin-top: 6%;
 }
-#taiwanbreakImg {
-    width:400px;
-    height: 600px;
-    transform: rotate(90deg);
-    border-radius: 5px;
-    margin-right: 10%;
-}
-.container {
-    justify-content: center;
-}
-#InfoCard {
-    margin-top: 10%;
-}
-#TaiwanBreakcontent{
-    text-align: center;
-    justify-content: center;
-}
-#traditionalContent {
-    width: 1000px;
-    text-align: center;
-    margin-left:15%;
-    margin-bottom: 10%;
+
+hr {
+	width: 700px;
+	text-align: center;
+	margin: auto;
 }
 
+
+/* sky lantern section */
+
+#sky1 {
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+#sky2 {
+	position: relative;
+	top: 240px;
+	right: 220px;
+}
+#sky3 {
+	position: relative;
+	top: 100px;
+	right: 0px;
+}
+
+#twnfestImg {
+	width: 900px;
+	height: 400px;
+	color: white;
+}
+
+#twmfestInfo {
+	position: relative;
+	top: -250px;
+	color: white;
+}
+
+#twnfestpara {
+	float: left;
+	width: 550px;
+	position: relative;
+	left: 50px;
+	border: 1px solid white;
+	padding: 1%
+}
 
 /* --------------- Footer ---------------- */
 
 #footer {
 	width: 100%;
-	height: 200px;
-	background-color:#f1355f;
+	height: 100px;
+	background-color:#6c6b6a;
 	display: flex;
-	text-align: left;
+	text-align: left
 }
 
 .footerSec {
 	width: 20%;
 	height: 200px;
 	margin:1%;
-	flex-grow: 3;
+	flex-grow: 1;
 }
+
 #PaladineFooter {
 	color: white;
 	margin-left: 5%;
-    margin-top: 5.5%;
+  margin-top: 3.25%;
 }
+
 #aboutusFooter {
 	color: white;
-	padding-top: 5%;;
-		
+	padding-top: 2.25%;;
+
 }
 .socialmediaIcons {
-	width: 70px;
+	width: 30px;
 	padding:10px;
 }
 #socialmediaFooter {
@@ -285,7 +220,7 @@ p {
 #NavFooter {
 	padding-top: 10%;;
 	padding-bottom: 5%;
-	background-color:#f1355f;
+	background-color:#6c6b6a;
     text-align: center;
 	text-decoration-line: none;
 
@@ -298,3 +233,162 @@ p {
 	padding-left: 6%;
 	padding-right:6%;
 }
+
+/* --  Menu NAV --  */
+
+#menu{
+  background-color: #FFB71B;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+	font-family: 'oswald', sans-serif;
+	font-size: 16pt;
+  font-weight: bold;
+}
+
+#menu:hover{
+  background-color: #EA0029;
+	color: white;
+  width:120px;
+  height:120px;
+  margin-top:-10px;
+  margin-left:-10px;
+  border-radius: 50%;
+  line-height: 120px;
+  font-size: 20pt;
+  transition: 0.25s;
+}
+
+/*
+#block{
+  position:absolute;
+  left: 130px;
+  top:0;
+  width:300px;
+  height:300px;
+  z-index: 2;
+  display: block;
+}
+*/
+#nav{
+  text-align: center;
+  line-height: 50px;
+	
+}
+
+#homeNav {
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left:5px;
+  background-color: #FFB71B;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
+  z-index: 1;
+}
+
+#homeNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#destNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#destNav:hover {
+  background-color: #EA0029;
+	color: white;
+  transition: 0.25s;
+}
+
+#aboutNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#aboutNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#contactNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#contactNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#quizNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#quizNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#controls{
+	position:fixed;
+}
+
+/* -- MENU NAV -- */

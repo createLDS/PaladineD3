@@ -5,41 +5,81 @@ var numOfC= document.getElementsByName("numOfCountries"),
     i=0,
     disp= document.getElementById("display"),
     results= document.getElementById("results"),
-    TaiwanGreet= document.getElementsByName("Taiwan-Greet");
+    TaiwanGreet= document.getElementsByName("Taiwan-Greet"),
+    koreaW = document.getElementsByName("Kwest"),
+    ThaiW = document.getElementsByName("Twest"),
+    Ceast = document.getElementsByName("Ceast"),
+    phil = document.getElementsByName("phil"),
+    resBG = document.getElementById("results");
 
 function checkQuiz(){
+    //These are the right answers
     if(numOfC[2].checked){
         i++;
     }
     if(fest[0].checked){
-        i++
+        i++;
     }
     if(TaiwanGreet[1].checked){
-        i++
+        i++;
     }
-    
+    if(koreaW[0].checked){
+      i++;
+    }
+    if(ThaiW[0].checked){
+      i++;
+    }
+    if(Ceast[0].checked){
+      i++;
+    }
+    if(phil[3].checked){
+      i++;
+    }
+
 }
 
 function result(){
-    
+
     var newDiv = document.createElement("div");
-    
+
+    results.innerHTML = "";
+
     if(i==0){
-        newDiv.innerHTML= "You got 0 out of 3 correct.";
+        newDiv.innerHTML= "You got 0 out of 7 correct.";
+        resBG.style.backgroundColor= "red";
     }
     else if(i==1){
-        newDiv.innerHTML= "You got 1 out of 3 correct!";
+        newDiv.innerHTML= "You got 1 out of 7 correct.";
+        resBG.style.backgroundColor= "red";
     }
     else if(i==2){
-        newDiv.innerHTML= "You got 2 out of 3 correct!";
+        newDiv.innerHTML= "You got 2 out of 7 correct.";
+        resBG.style.backgroundColor= "red";
     }
     else if(i==3){
-        newDiv.innerHTML= "You got 3 out of 3 correct!";
+        newDiv.innerHTML= "You got 3 out of 7 correct.";
+        resBG.style.backgroundColor= "red";
+    }
+    else if(i==4){
+        newDiv.innerHTML= "You got 4 out of 7 correct!";
+        resBG.style.backgroundColor= "#9EBC51";
+    }
+    else if(i==5){
+        newDiv.innerHTML= "You got 5 out of 7 correct!";
+        resBG.style.backgroundColor= "#9EBC51";
+    }
+    else if(i==6){
+        newDiv.innerHTML= "You got 6 out of 7 correct!";
+        resBG.style.backgroundColor= "#9EBC51";
+    }
+    else if(i==7){
+        newDiv.innerHTML= "You got 7 out of 7 correct!";
+        resBG.style.backgroundColor= "#9EBC51";
     }
     results.appendChild(newDiv);
 }
 
-document.getElementById("submit").addEventListener("click", function(){  
+document.getElementById("submit").addEventListener("click", function(){
     //console.log(numOfC[0]);
     //results.innerHTML= "";
     i=0;
@@ -49,6 +89,9 @@ document.getElementById("submit").addEventListener("click", function(){
 
 // -- quiz logic
 
+document.getElementById("reset").addEventListener("click", function(){
+  location.reload();
+});
 
 // -- MENU code
 
@@ -67,12 +110,12 @@ menuButton.addEventListener("click", function(){
 
   if(open == false){
   menuButton.innerHTML= "X";
-      
+
   destButton.style.display= "block";
     aboutButton.style.display= "block";
     contactButton.style.display= "block";
     quizButton.style.display= "block";
-      
+
   //dBlock.style.display= "none";
 
   homeButton.style.left= "130px";
@@ -96,7 +139,7 @@ menuButton.addEventListener("click", function(){
   }
   else if(open == true) {
     menuButton.innerHTML= "MENU";
-      
+
     //dBlock.style.display= "block";
 
     destButton.style.opacity= "0";
@@ -118,7 +161,7 @@ menuButton.addEventListener("click", function(){
       homeButton.style.left= "5px";
       homeButton.style.width= "50px";
       homeButton.style.opacity= "0";
-        
+
     }, 380);
 
 
@@ -211,11 +254,11 @@ quizButton.addEventListener("click", function(){
 });
 
 aboutButton.addEventListener("click", function(){
-   window.location.href= "../About/index.html"; 
+   window.location.href= "../About/index.html";
 });
 
 contactButton.addEventListener("click", function(){
-   window.location.href= "../Contact/index.html"; 
+   window.location.href= "../Contact/index.html";
 });
 
 // -- MENU CODE

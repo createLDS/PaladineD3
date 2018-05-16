@@ -1,4 +1,4 @@
-2018-03-21 11:30pm Patrick
+﻿2018-03-21 11:30pm Patrick
 - Worked on landing folder
 - Added img folder with vertical logo inside
 
@@ -90,5 +90,58 @@ Angus - Edited Japan page
 2018-04-18 1:00am Patrick
 -All Links linked
 
+
+
 2018-04-18 9:23am Lorenzo
+
 - Updated landing page “Who are we?” description
+
+
+
+2018-04-20 8:06am Lorenzo
+
+- Cleaned out mac os generated files
+
+2018-04-29 10:37pm Patrick
+- Worked on landing page
+ - Enlarged buttons, change color on hover, added cursor
+- Worked on postcard
+ - Changed menu color
+ - Added cursor to menu buttons and postcards
+- Worked on Thailand page
+ - updated menu buttons
+ - Fixed margins on last paragraph
+ - changed footer color
+ - rearranged footer nav
+ - fixed margins
+
+2018-05-13 6:50pm patrick
+Added menu to all pages
+added top image to thailand
+
+2018-05-15 12:05am Patrick
+Finished quiz page
+
+2018-05-15 11:15pm Lorenzo
+- Finished Korea
+	- Removed inaccurate/offensive content
+	- Added more content related to breakfast food
+	- Fixed pop-up menu CSS (fixed colours, fonts and animations)
+	- Fixed "about us" footer description and CSS
+
+2018-05-15 11:36pm patrick
+Finished Thailand
+ - added more food
+ - fixed margins
+ - added menu color fix
+Finished Philippines
+ - added more food
+ - fixed margins and removed unnecessary pics
+ - added menu color fix
+Worked on landing
+ - fixed footer
+
+2018-05-16 12:10am Lorenzo
+- Fixed menus for most pages
+- Fixed footers for most pages
+- Fixed landing page button CSS

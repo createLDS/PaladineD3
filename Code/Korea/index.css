@@ -94,12 +94,12 @@ a:hover {
 .items {
 	flex-grow: 1;
 	margin:  10px;
-	overflow: hidden; 
+	overflow: hidden;
 }
 #cultureCard {
 	width: 150px;
 	height: 300px;
-	
+
 }
 
 /* Centering the card */
@@ -129,8 +129,8 @@ a:hover {
 	height: 400px;
 }
 
-        
-        
+
+
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
@@ -158,12 +158,22 @@ a:hover {
     border-radius: 0 0 0 0;
 }
 
+	#home {
+	background-image: url(5.jpg);
+  background-repeat: no-repeat;
+	background-color: white;
+	background-position: center;
+	border-color: #9EBC51;
+	border-style: solid;
+	border-width: thick;
+}
+
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
     background-color: #9EBC51;
 	  /* round corners off if needed */
-    border-radius: 0 0 0 0; 
+    border-radius: 0 0 0 0;
 	text-align: left;
 }
 
@@ -205,15 +215,17 @@ a:hover {
 	margin:1%;
 	flex-grow: 3;
 }
+
 #PaladineFooter {
 	color: white;
 	margin-left: 5%;
-    margin-top: 5%;
+  margin-top: 3.25%;
 }
+
 #aboutusFooter {
 	color: white;
-	padding-top: 5%;;
-		
+	padding-top: 2.25%;;
+
 }
 .socialmediaIcons {
 	width: 40px;
@@ -226,11 +238,13 @@ a:hover {
 	left: 0px;
 	height: 50px;
 }
+
 #NavFooter {
 	padding-top: 5%;;
 	padding-bottom: 5%;
 	background-color:#6c6b6a;
 }
+
 .footerNav {
 	width: 100%;
 	font-family: 'Mukta Mahee', sans-serif;
@@ -244,7 +258,7 @@ a:hover {
 /* -------   BOX CAPTION  --------- */
 
 #mainwrapper {
-  margin:0 auto		
+  margin:0 auto
 }
 #mainwrapper #tools {
   text-align:center;
@@ -295,7 +309,7 @@ a:hover {
   height:100%;
 	left: 0;
 	transition: all 300ms ease-out;
-  
+
 }
 
 
@@ -345,5 +359,172 @@ a:hover {
 }
 
 #mainwrapper .box .bg-block-2{
-  background-image: url("2.jpg");
+  background-image: url("banchan.jpg");
 }
+
+#mainwrapper .box .bg-block-3{
+  background-image: url("kimchi.jpg");
+}
+
+#mainwrapper .box .bg-block-4{
+  background-image: url("sandwich.webp");
+}
+
+/* --  Menu NAV --  */
+
+#menu{
+  background-color: #FFB71B;
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+	font-family: 'oswald', sans-serif;
+	font-size: 16pt;
+  font-weight: bold;
+}
+
+#menu:hover{
+  background-color: #EA0029;
+	color: white;
+  width:120px;
+  height:120px;
+  margin-top:-10px;
+  margin-left:-10px;
+  border-radius: 50%;
+  line-height: 120px;
+  font-size: 20pt;
+  transition: 0.25s;
+}
+
+/*
+#block{
+  position:absolute;
+  left: 130px;
+  top:0;
+  width:300px;
+  height:300px;
+  z-index: 2;
+  display: block;
+}
+*/
+#nav{
+  text-align: center;
+  line-height: 50px;
+	
+}
+
+#homeNav {
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left:5px;
+  background-color: #FFB71B;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: width 0.2s, left 0.2s, opacity 0.2s, top 0.5s;
+  z-index: 1;
+}
+
+#homeNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#destNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#destNav:hover {
+  background-color: #EA0029;
+	color: white;
+  transition: 0.25s;
+}
+
+#aboutNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+    display: none;
+}
+
+#aboutNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#contactNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#contactNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+#quizNav{
+  font-family: 'Mukta Mahee', sans-serif;
+	font-size: 14pt;
+  position:absolute;
+  top:5px;
+  left: 130px;
+  background-color: #FFB71B;
+  width:300px;
+  height:50px;
+  border-radius: 5%;
+  opacity: 0;
+  transition:top 0.5s, opacity 0.5s, width 0.2s, left 0.2s;
+  display: none;
+}
+
+#quizNav:hover {
+  background-color: #EA0029;
+	color: white;
+	transition: 0.25s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#controls{
+	position:fixed;
+}
+
+/* -- MENU NAV -- */
